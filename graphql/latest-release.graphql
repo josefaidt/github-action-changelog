@@ -1,0 +1,14 @@
+query GET_LATEST_RELEASE(
+  $owner: String! = "aws-amplify"
+  $name: String! = "amplify-cli"
+) {
+  repository(owner: $owner, name: $name) {
+    name
+    latestRelease {
+      id
+      name
+      tagName
+      description
+    }
+  }
+}

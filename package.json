@@ -1,0 +1,29 @@
+{
+  "name": "generate-changelog-from-release",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "dayjs": "^1.10.4",
+    "mdast-util-from-markdown": "^0.8.5",
+    "mdast-util-gfm": "^0.1.2",
+    "mdast-util-to-markdown": "^0.6.5",
+    "micromark": "^2.11.4",
+    "micromark-extension-gfm": "^0.3.3",
+    "unist-util-visit": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  }
+}

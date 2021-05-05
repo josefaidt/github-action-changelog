@@ -1,0 +1,20 @@
+query GET_RELEASES(
+  $owner: String! = "aws-amplify"
+  $name: String! = "amplify-cli"
+) {
+  repository(owner: $owner, name: $name) {
+    name
+    releases(first: 100, orderBy: { direction: ASC, field: CREATED_AT }) {
+      totalCount
+      edges {
+        node {
+          id
+          createdAt
+          name
+          tagName
+          description
+        }
+      }
+    }
+  }
+}

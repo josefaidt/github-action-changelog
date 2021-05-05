@@ -1,0 +1,13 @@
+name: 'Global changelog from release notes'
+description: 'Aggregate release notes into global changelog'
+# inputs:
+#   who-to-greet:  # id of input
+#     description: 'Who to greet'
+#     required: true
+#     default: 'World'
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+runs:
+  using: 'node14'
+  main: 'index.js'
